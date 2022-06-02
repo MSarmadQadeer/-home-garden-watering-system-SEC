@@ -33,7 +33,7 @@ const CustomButton = (prop) => {
   )
 }
 
-function Home({ navigation }) {
+function ECommerceMenu({ navigation }) {
   return (
     <ImageBackground source={require("../assets/images/background.png")} style={{ width: '100%', height: '100%' }}>
       <ScrollView>
@@ -51,16 +51,15 @@ function Home({ navigation }) {
 
         <View
           style={{ alignItems: 'center', paddingTop: 20 }}>
-          <CustomButton title="User" navigator={() => navigation.navigate('Start')} />
-          <CustomButton title="E-Commerce" navigator={() => navigation.navigate('ECommerceMenu')} />
-          <CustomButton title="Moisture" navigator={() => navigation.navigate('Start')} />
-          <CustomButton title="Hardware" navigator={() => navigation.navigate('Start')} />
-          <CustomButton title="Weather" navigator={() => navigation.navigate('Start')} />
-          <CustomButton title="FeedBack" navigator={() => navigation.navigate('Start')} />
+          <CustomButton title="Buy Item" navigator={() => navigation.navigate('store')} />
+          <CustomButton title="Drop Item" navigator={() => navigation.navigate('store')} />
+          <CustomButton title="View Item" navigator={() => navigation.navigate('store')} />
+          <CustomButton title="Payment" navigator={() => navigation.navigate('Start')} />
+          <CustomButton title="Checkout" navigator={() => navigation.navigate('Start')} />
         </View>
       </ScrollView>
     </ImageBackground>
   );
 }
 const styles = StyleSheet.create();
-export default Home;
+export default ECommerceMenu;
